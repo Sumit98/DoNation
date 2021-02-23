@@ -1,0 +1,11 @@
+Hi {{user.first_name}}, <br><br>
+
+{{vote.entity}} evaluated the organization{{vote.ngo_request.name}}. we ask you to <a href="{{base_path}}/admin/hub/pendingregisterngorequest/">evaluate</a> this organization. <br><br>
+
+<b>Here {{vote.entity}}:</b> {{vote.vote}} <br>
+{% if vote.motivation %}
+<b>Motivation:</b> {{vote.motivation}}
+{% endif %} <br><br>
+
+Thank You, <br>
+RoHelp
